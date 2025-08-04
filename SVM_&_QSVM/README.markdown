@@ -1,4 +1,5 @@
 # Summary of SVM, QSVM, and Comparison
+- ![Spiral Dataset](https://i.sstatic.net/biy1H.png)
 
 ## Classical SVM
 - **Concept**: Support Vector Machine (SVM) is a classical machine learning algorithm that identifies an optimal hyperplane to separate data points of different classes, maximizing the margin. It employs kernels (e.g., linear, RBF) to transform non-linearly separable data into a higher-dimensional space for separation.
