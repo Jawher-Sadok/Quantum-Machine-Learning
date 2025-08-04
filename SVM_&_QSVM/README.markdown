@@ -44,13 +44,12 @@
   - **Hyperparameter Tuning**: Implements a grid search over the regularization parameter `C` (`[0.1, 1.0, 10.0]`) to optimize the QSVM’s balance between margin maximization and classification error, improving generalization.
   - **Reduced Dataset Noise**: Lowers noise from 0.1 to 0.05 in the spiral dataset, making the spirals more distinct and easier for the quantum kernel to separate while maintaining the non-linear challenge.
 - **Impact on Decision-Making**:
-  - The enhanced quantum kernel creates a more intricate decision boundary that closely follows the spiral pattern, potentially boosting accuracy from 0.72 to 0.85–0.95.
+  - The enhanced quantum kernel creates a more intricate decision boundary that closely follows the spiral pattern.
   - Exact simulation ensures precise kernel matrix computation, reducing classification errors.
   - Optimized `C` enhances generalization, preventing overfitting or underfitting.
   - Reduced noise clarifies the dataset’s structure, allowing the quantum kernel to focus on the spirals’ geometry.
-- **Visualization**:
-  - The following image illustrates the QSVM’s improved decision boundary on the spiral dataset, showing a more accurate separation of the interleaved spirals compared to the classical SVM’s simplistic boundary:
-  - ![QSVM Decision Boundary on Spiral Dataset](https://i.sstatic.net/biy1H.png)
+
+
 
 ## Conclusion
 - **Classical SVM** fails on the spiral dataset (accuracy: 0.48) due to the RBF kernel’s inability to capture the highly non-linear, interleaved spiral structure.
