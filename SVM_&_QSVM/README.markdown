@@ -37,7 +37,7 @@
   - **QSVM**: Limited by current noisy intermediate-scale quantum (NISQ) hardware and simulator constraints, though future quantum advancements could improve scalability.
 
 ## How the Final Code Improves QSVM Decision-Making
-- **Script**: `qsvm_spiral_dataset_enhanced.py`
+
 - **Improvements**:
   - **PauliFeatureMap**: Replaces `ZZFeatureMap` with `PauliFeatureMap` (`paulis=['Z', 'ZZ']`, `reps=3`) to enhance kernel expressivity. This introduces diverse quantum interactions (single-qubit and two-qubit rotations), enabling the kernel to better model the spiral dataset’s complex boundary.
   - **StatevectorSimulator**: Uses exact statevector simulation instead of shot-based simulation, eliminating statistical noise in kernel computation for a more accurate decision boundary.
@@ -55,4 +55,4 @@
 ## Conclusion
 - **Classical SVM** fails on the spiral dataset (accuracy: 0.48) due to the RBF kernel’s inability to capture the highly non-linear, interleaved spiral structure.
 - **QSVM** performs better (accuracy: 0.72) by leveraging a quantum kernel to map data into a high-dimensional quantum feature space, but initial limitations in feature map design and simulator noise constrain performance.
-- The **enhanced QSVM** (`qsvm_spiral_dataset_enhanced.py`) significantly improves decision-making through a more expressive `PauliFeatureMap`, exact statevector simulation, tuned hyperparameters, and reduced dataset noise, resulting in a decision boundary that better separates the spirals, as visualized in the provided image.
+- **enhanced QSVM**  significantly improves decision-making through a more expressive `PauliFeatureMap`, exact statevector simulation, tuned hyperparameters, and reduced dataset noise, resulting in a decision boundary that better separates the spirals, as visualized in the provided image.
